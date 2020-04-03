@@ -1,6 +1,6 @@
 const connection = require('../database/connection');
 
-module.exports = {
+module.exports = { 
     async index(request, response) { 
         const { page = 1 } = request.query;
 
@@ -38,7 +38,7 @@ module.exports = {
     },
 
     async delete(request, response){
-        const { id } = request.params; 
+        const { id } = request.parms; 
         const ong_id = request.headers.authorization
         
 
